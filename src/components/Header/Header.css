@@ -1,0 +1,61 @@
+.header {
+    height: 167px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    margin: 0px 100px;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    list-style-type: none;
+}
+
+.header ul.navigation li a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.header ul.navigation li a:hover {
+    opacity: 0.5;
+    color: #339933;
+    transition: opacity 500ms;
+}
+
+.basket_img:hover {
+    transition: 500ms ease;
+    transform: scale(1.5);
+}
+
+.catalog_button {
+    width: 110px;
+    text-align: center;
+    background: #339933;
+    border: 12px solid #339933;
+    border-radius: 5px;
+    color: white;
+}
+
+.catalog_button:hover {
+    cursor: pointer;
+    transition: 500ms ease;
+    transform: scale(1.5);
+}
+
+.header_logo {
+    margin-right: 89px;
+    margin-left: 26px;
+}
