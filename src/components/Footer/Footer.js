@@ -26,6 +26,9 @@ function Footer () {
                 <p className='time'>Day and night</p>
             </div>
         </div>
+        <div>
+            <p className='footer_p'>2023 © Janis Buzis</p>
+        </div>
     </div>
 
     )

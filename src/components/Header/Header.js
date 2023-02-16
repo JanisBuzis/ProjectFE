@@ -8,9 +8,11 @@ function Header () {
         <div className = 'header'>
             <div className = 'header_left'>
             <Link to = {'/'}>
-                    <img className='header_logo' src={logo} alt="logo_img"/>
+                <img className='header_logo' src={logo} alt="logo_img"/>
             </Link>
-                <div className = 'catalog_button'>Catalog</div>
+            <Link className='catalog_button_link' to = {'/products/all'}>
+            <div className = 'catalog_button'><a className='a_catalog'>Catalog</a></div>
+            </Link>
             </div>
                 <ul className = 'navigation'>
                     <li><a href='/'>Home</a></li>

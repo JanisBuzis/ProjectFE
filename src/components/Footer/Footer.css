@@ -1,18 +1,13 @@
-.footer {
-    width: 100%;
-}
-
 .footer_wrapper {
-    
-    margin: 0px 100px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .footer_left {
-    width: 50%;
+    width: 65%;
     height: 100%;
     font-weight: bold;
+    margin-left: 30px;
 }
 
 .footer_left h5 {
@@ -63,7 +58,8 @@
     height: 100%;
     font-family: 'Montserrat';
     font-style: normal;
-    margin-left: 570px;
+    margin-left: 600px;
+
 }
 
 .footer_right h6 {
@@ -94,5 +90,13 @@
     line-height: 130%;
     color: #000000;
     margin-top: 25px;
+}
+
+.footer_p {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    color: grey;
 }
 
