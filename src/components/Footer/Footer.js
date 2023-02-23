@@ -1,9 +1,10 @@
 import './Footer.css'
 import inst_icon from './inst_icon.svg'
 import whatsapp_icon from './whatsapp_icon.svg'
+
 function Footer () {
     return (
-        <div className='footer'>
+        <div className='footer' id='contacts'>
             <div className='footer_wrapper'>
                 <div className='footer_left'>
                 <h5>Contacts</h5>
@@ -33,6 +34,5 @@ function Footer () {
 
     )
 }
-
 
 export default Footer

@@ -1,3 +1,7 @@
+.footer {
+    margin-top: 50px;
+}
+
 .footer_wrapper {
     display: flex;
     align-items: center;
@@ -27,14 +31,12 @@
     line-height: 130%;
     color: #000000;
     margin-top: 25px;
-
 }
 
 .icons_bottom {
     display: flex;
     align-items: center;
 }
-
 
 .icons_bottom p {
     font-size: 20px;
@@ -59,7 +61,6 @@
     font-family: 'Montserrat';
     font-style: normal;
     margin-left: 600px;
-
 }
 
 .footer_right h6 {

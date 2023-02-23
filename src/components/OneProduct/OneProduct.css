@@ -3,6 +3,7 @@
     height: 100%;
     margin: 0px 87px;
     margin-bottom: 33px;
+    margin-top: 75px;
 }
 
 .one_product_title {
@@ -16,7 +17,6 @@
 
 .one_product_types {
     display: flex;
-    
 }
 
 .right_side_product {
@@ -24,7 +24,6 @@
     flex-direction: column;
     margin-top: 65px;
     margin-left: 450px;
-    
 }
 
 .addtoBasket {
@@ -59,4 +58,26 @@
 .oneProduct_price {
     display: flex;
     align-items: center;
+}
+
+.description {
+    width: 412px;
+}
+
+.desc_title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.desc_p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #000000;
 }

@@ -6,7 +6,7 @@ import { fetchCategoriesList } from "../../asyncActions/categoriesListFetch"
 import { fetchProductsList } from "../../asyncActions/productsListFetch";
 
 import trava from './trava.svg'
-import gnom_img from './gnom.svg.svg'
+import gnom_img from './gnom.svg'
 
 import './Home.css'
 
@@ -39,12 +39,10 @@ function Home () {
                         <h1 className='h1'>Sales</h1>
                             <h2 className='h2'>for the new season</h2>
                         <div className='buttons_bottom'>
-                        <   div className='all_sales'>
-                        All sales
-                        </div>
-                        <div className='details'>
-                        Details
-                        </div>
+                        <Link className="all_salesLink" to = {'/products/all'}>
+                            <div className='all_sales'>All sales</div>
+                        </Link>
+                        <div className='details'>Details</div>
                     </div>
                 </div>
                 <div className='right_side'>
@@ -52,12 +50,12 @@ function Home () {
                     </div>
                 </div>
             </div>
-            <div className="categories_main">
-            <div className="categories_h">
-                <h6>Categories</h6>
-                <Link to = {'/categories/all'}>
-                    <button type="submit">All Categories</button>
-                </Link>
+            <div className="categories_main" id="categories">
+                <div className="categories_h">
+                    <h6>Categories</h6>
+                    <Link to = {'/categories/all'}>
+                        <button type="submit">All Categories</button>
+                    </Link>
             </div>
         <div className="categories_home">    
             {categories.map(elem => 
@@ -72,7 +70,7 @@ function Home () {
             )}
                 </div>
             </div>
-            <div className='sales_input'>
+            <div className='sales_input' id="sales_input">
                 <div className='s_input_wrapper'>
                     <div className='left_side_s_input'>
                         <img className='gnom_img' src = {gnom_img} alt = 'gnom_img'/>
@@ -84,13 +82,13 @@ function Home () {
                     </div>
                 </div>
             </div>
-            <div className="discounts_main">
+            <div className="discounts_main" id="discounts">
                 <h6>Discounts</h6>
                 <div className="discounts_wrapper">
                     {products.map(elem => 
                         <Link className="discounts_link" key={elem.id} to={`/products/${elem.id}`}>
                                 <div className="discounts_img_wrapper">
-                                    <img width={320} height={275} className="discounts_image" src={baseUrl + elem.image} alt='photo'/>
+                                    <img width={300} height={300} className="discounts_image" src={baseUrl + elem.image} alt='photo'/>
                                         <div className="discounts_price">
                                             <p className="price">{elem.discont_price} €</p>
                                             <p className="price_disc">{elem.price} €</p>

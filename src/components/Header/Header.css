@@ -1,14 +1,13 @@
 .header {
-    height: 167px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 130%;
 }
+
 .catalog_button_link {
     text-decoration: none;
 }
@@ -38,11 +37,6 @@
     transition: opacity 500ms;
 }
 
-.basket_img:hover {
-    transition: 500ms ease;
-    transform: scale(1.5);
-}
-
 .catalog_button {
     width: 110px;
     text-align: center;
@@ -58,11 +52,22 @@
 
 .catalog_button:hover {
     cursor: pointer;
-    transition: 500ms ease;
-    transform: scale(1.05);
 }
 
 .header_logo {
     margin-right: 89px;
     margin-left: 26px;
+}
+
+.basket_block {
+    width: 100%;
+    margin-left: 50px;
+    position: relative;
+}
+
+.basket_count {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 12px;
 }

@@ -61,6 +61,10 @@
     justify-content: center;
 }
 
+.all_salesLink {
+    text-decoration: none;
+}
+
 .details {
     display: flex;
     align-items: center;
@@ -246,7 +250,6 @@
 .discounts_title {
     margin-top: 20px;
     font-weight: bold;
-    
     letter-spacing: 0.03em;
     color: black;
 }

@@ -30,9 +30,8 @@ function AllCategories () {
                     </div>
                 </Link>
             )}
+            </div>
         </div>
-        </div>
-        
     )    
 }
 
