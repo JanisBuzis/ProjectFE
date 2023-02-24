@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import { useSelector  } from "react-redux";
+
 import logo from './logo.svg'
 import basket_img from './basket_img.svg'
-import { useSelector  } from "react-redux";
 
 import './Header.css'
 
 function Header () {
+    
     const basket = useSelector(store => store.basket.basket)
 
     return (

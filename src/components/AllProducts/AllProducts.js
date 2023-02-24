@@ -4,6 +4,7 @@ import { baseUrl } from "../..";
 import { Link } from "react-router-dom";
 import { addItemAction } from "../../store/basketReducer";
 import { fetchProductsList } from "../../asyncActions/productsListFetch";
+import Filter from "../Function/FilterProducts/Filter";
 import Button from "../Function/Button/Button";
 
 import './AllProducts.css'
@@ -21,16 +22,8 @@ function AllProducts () {
 
     return (
             <div className="all_products">
-                <h6>Tools and inventory</h6>
-                <div className="filters_and_prices">
-                <p>Price</p>
-                <input className="input_prices" placeholder='from'></input>
-                <input className="input_prices" placeholder='to'></input>
-                <p className="items_on_sale_p">Items on sale</p>
-                <input className="check_box" type ="checkbox"></input>
-                <p className="sort">Sort:</p>
-                <input placeholder="Default" className="sort_input"></input>
-                </div>
+                <h6 className="all_products_h6">All Products</h6>
+                <Filter/>
                 <div className="all_products_main">
                     {products.map(elem => 
                         <Link className="products_link" key={elem.id} to={`/products/${elem.id}`}>
@@ -45,7 +38,7 @@ function AllProducts () {
                             <Button onClick={(elem2)=> 
                             {elem2.preventDefault()
                             dispatch(addItemAction(elem))
-                            }} title='Add to cart'/>
+                            }} title='Add to basket'/>
                             </div>      
                         </Link>
                     )}
@@ -63,4 +56,14 @@ export default AllProducts
                         {elem2.preventDefault()
                         dispatch(addItemAction(elem))
                         }} title='Add to cart'/>
-                        </div>*/      
+                        </div>*/
+                        
+                        /*<div className="filters_and_prices">
+                        <p>Price</p>
+                        <input className="input_prices" placeholder='from'></input>
+                        <input className="input_prices" placeholder='to'></input>
+                        <p className="items_on_sale_p">Items on sale</p>
+                        <input className="check_box" type ="checkbox"></input>
+                        <p className="sort">Sort:</p>
+                        <input placeholder="Default" className="sort_input"></input>
+                        </div>*/

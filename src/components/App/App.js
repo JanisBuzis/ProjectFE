@@ -1,5 +1,9 @@
 import Header from '../Header/Header'
 import Home from '../Home/Home'
+import Coupon from '../Home/Coupon/Coupon'
+import Categories from '../Home/Categories/Categories'
+import SeasonSale from '../Home/SeasonSale/SeasonSale'
+import Sale from '../Home/Sale/Sale'
 import Footer from '../Footer/Footer'
 import Basket from '../Basket/Basket'
 import AllProducts from '../AllProducts/AllProducts'
@@ -21,13 +25,18 @@ function App() {
                     <Route path="/categories/all" element = {<AllCategories/>}/>
                     <Route path='/products/all' element = {<AllProducts/>}/>
                     <Route path='/basket' element = {<Basket/>}/>
+                    <Route path='/coupon' element = {<Coupon/>}/>
+                    <Route path='/Sale' element = {<Sale/>}/>
+                    <Route path='/categories' element = {<Categories/>}/>
+                    <Route path='/SeasonSale' element = {<SeasonSale/>}/>
+                    <Route path='/home' element = {<Home/>}/>
                     <Route path='/categories/:id' element = {<OneCategory/>}/>
                     <Route path='/products/:id' element = {<OneProduct/>}/>
                     <Route path='*' element = {<NotFound/>}/>
                 </Routes>
             <Footer/>
         </div>
-    );
+    )
 }
 
 export default App

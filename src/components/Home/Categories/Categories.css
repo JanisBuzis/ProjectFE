@@ -1,0 +1,72 @@
+.categories_main {
+    margin-bottom: 100px;
+    padding: 30px;
+}
+
+.categories_h {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.categories_h h6 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.categories_h button {
+    width: 120px;
+    height: 30px;
+    margin-left: 32px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid #8B8B8B;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #8B8B8B;
+}
+
+.categories_home {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.categories_wrapper p {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: black;
+}
+
+.p_categories {
+    text-decoration: none;
+}
+
+.categories_link {
+    text-decoration: none;
+}
+
+.categories_image{
+    width: 320px;
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.categories_image:hover {
+    transform: scale(1.05);
+    transition: 500ms ease;
+}

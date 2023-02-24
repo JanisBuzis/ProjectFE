@@ -1,0 +1,92 @@
+.discounts_main {
+    height: 100%;
+    margin: 45px 30px;
+}
+
+.discounts_main h6 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.discounts_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 110px;
+    margin-top: 21px;
+}
+
+.discounts_title {
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: black;
+    width: 280px;
+}
+
+.discounts_link {
+    text-decoration: none;
+}
+
+.discounts_img_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.discounts_image {
+    width: 320;
+    height: 275px;
+    border-radius: 10px;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.discounts_price {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: black;
+}
+
+.price_disc {
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-decoration-line: line-through;
+    color: #8B8B8B;
+}
+
+.percent {
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #FF32A1;
+}
+
+.button_div_sale {
+    opacity: 0;
+    position: absolute;
+    bottom: 126px;
+    left: 10px;
+}
+
+.button_div_sale:hover {
+    opacity: 1;
+    transition: 0.5s;
+}

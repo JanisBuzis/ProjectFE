@@ -1,9 +1,10 @@
-.all_products h6 {
+.all_products_h6 {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
     letter-spacing: 0.03em;
-    margin-left: 40px;
+    margin-bottom: 70px;
+    margin-left: 30px;
     color: #000000;
 }
 
@@ -11,6 +12,7 @@
     width: 100%;
     margin-top: 35px;
     position: relative;
+    
 }
 
 .all_products_main {
@@ -48,8 +50,6 @@
 }
 
 .button_div {
-    display: flex;
-    justify-content: center;
     position: absolute;
     bottom: 117px;
     opacity: 0;
@@ -57,6 +57,7 @@
 
 .button_div:hover {
     opacity: 1;
+    transition: 0.5s;
 }
 
 .catalog {

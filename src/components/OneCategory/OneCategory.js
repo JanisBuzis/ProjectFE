@@ -39,7 +39,7 @@ function OneCategory () {
                         <Button onClick={(elem2)=> 
                         {elem2.preventDefault()
                         dispatch(addItemAction(elem))
-                        }} title='Add to cart'/>
+                        }} title='Add to basket'/>
                         </div>   
             </div>
             )}

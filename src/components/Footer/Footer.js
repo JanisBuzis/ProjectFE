@@ -24,7 +24,7 @@ function Footer () {
                 <h6>Adress</h6>
                 <p className='adress'>Flat 48, Anson House, <br/> Shandy St, London E1 4SS</p>
                 <p className='hours'>Opening hours</p>
-                <p className='time'>Day and night</p>
+                <p className='time'>24 / 7</p>
             </div>
         </div>
         <div>

@@ -1,0 +1,81 @@
+.filter{
+    display: flex;
+    flex-direction: row;    
+    gap: 8em;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 4em;
+    margin-left: 30px;
+}
+
+.filter_label{
+    margin-right: 1em;
+}
+
+.filter_price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.filter_price form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filter_price form input:first-child{
+    margin-right: 1em;
+}
+
+.filter_checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.filter_checkbox input {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+.filter_checkbox label {
+    --size: 50px;
+    cursor: pointer;
+    width: var(--size);
+    height: calc(var(--size) / 2);
+    background: var(--silver);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+
+
+
+.filter_checkbox label:active:after {
+    width: 55%;
+}
+
+.filter_select{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+}
+  
+.filter_select select{    
+    background-color: var(--white);
+    color: var(--green);
+    padding: 12px;
+    width: 250px;    
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-size: 16px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);   
+    outline: none;
+    cursor: pointer;   
+}

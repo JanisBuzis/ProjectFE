@@ -13,17 +13,18 @@
     letter-spacing: 0.03em;
     color: #3A3A3A;
     margin-bottom: 30px;
+    width: 701px;
 }
 
 .one_product_types {
     display: flex;
+    gap: 400px;
 }
 
 .right_side_product {
     display: flex;
     flex-direction: column;
     margin-top: 65px;
-    margin-left: 450px;
 }
 
 .addtoBasket {

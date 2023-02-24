@@ -3,25 +3,24 @@ const defaultState = {
 }
 
 const ADD_ITEM = 'ADD_ITEM'
-const ADD_COUNT = 'ADD_COUNT'
 const DEL_COUNT = 'DEL_COUNT'
+const ADD_COUNT = 'ADD_COUNT'
 const REM_COUNT = 'REM_COUNT'
-
 
 export const basketReducer = (state = defaultState, action) =>{
     switch(action.type){
         case ADD_ITEM:
         let basket_add = state.basket.find(elem => elem.id == action.payload.id)
-        if (basket_add) {             
-            return {...state, basket: state.basket.map(elem => {
-                if (elem.id == basket_add.id){
+     if (basket_add) {             
+         return {...state, basket: state.basket.map(elem => {
+         if (elem.id == basket_add.id){
                     elem.count = elem.count + 1
                 }
                 return elem
                 })}
-            } else {
+        } else {
                 return {...state, basket: [...state.basket, {...action.payload, count: 1}]}}            
-        case ADD_COUNT:
+    case ADD_COUNT:
             return {...state, basket: state.basket.map(elem => {
                 if (elem.id == action.payload){
                     elem.count = elem.count + 1
@@ -32,13 +31,13 @@ export const basketReducer = (state = defaultState, action) =>{
             let rem = state.basket.find(elem => elem.id == action.payload)
             if (rem.count == 1){
                 return {...state, basket: state.basket.filter(elem => elem.id != action.payload)}
-            } else {
-                return {...state, basket: state.basket.map(elem => {
-                    if (elem.id == action.payload){
+        } else {
+            return {...state, basket: state.basket.map(elem => {
+             if (elem.id == action.payload){
                         elem.count = elem.count - 1
-                    }
-                    return elem
-                    })}
+                }
+                return elem
+                 })}
                 }
         case DEL_COUNT:
             return {...state, basket: state.basket.filter(elem => elem.id != action.payload)}

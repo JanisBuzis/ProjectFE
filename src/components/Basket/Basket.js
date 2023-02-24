@@ -21,7 +21,9 @@ function Basket () {
         <div className='basket_main'>
             <p className='basket_title'>Basket</p>
             <div className='basket_header'>
-                <p>Home/Basket </p>
+                <Link to={'/'}>
+                    <p>Home/Basket</p>
+                </Link>
                 <Link to={'/products/all'}>
                     <button>Back</button>
                 </Link>
@@ -38,7 +40,7 @@ function Basket () {
                             <div className='basket_counter'>
                                 <button onClick={() => dispatch(remCountAction(elem.id))}>-</button>
                                 <p>{elem.count}</p>
-                                <button onClick={() => dispatch(addCountAction(elem.id))} >+</button>
+                                <button onClick={() => dispatch(addCountAction(elem.id))}>+</button>
                             </div>
                         </div>
                         <div className='basket_price_block'>
@@ -50,7 +52,7 @@ function Basket () {
                         </div> 
                         <div className='cross_delete'>                            
                             <FontAwesomeIcon onClick={() => dispatch(deletCountAction(elem.id))} 
-                            title={'close'} 
+                            
                             icon={ faXmark } 
                             className='delete_block_icon'/>
                         </div>                
